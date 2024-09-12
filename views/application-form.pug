@@ -1,0 +1,65 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Students Application Form
+  link(rel='stylesheet' href='/css/application-form.css')
+.container
+  .container-left
+    img(src='/image/logo.png' alt='logo')
+  .container-right
+    form(action='/' method='POST')
+      h1 Student Application form
+      .row
+        .column
+          label(for='firstName') First Name*
+          input#firstName(type='text' name='firstName')
+        .column
+          label(for='lastName') Last Name*
+          input#lastName(type='text' name='lastName')
+      .row
+        .column
+          label(for='course') Course
+          select#course(name='course')
+            option(value='') select course
+            option(value='civil') civil enginer
+            option(value='information') Information technology
+            option(value='software') software engineering
+        .column
+          label(for='entryScheme') Entry Scheme
+          select#entryScheme(name='entryScheme')
+            option(value='') select entry scheme
+            option(value='certificate') Certificate 
+            option(value='A-Level') A-Level
+            option(value='O-Level') O-Level
+      .row
+        .column
+          label(for='intake') Intake
+          select#intake(name='intake')
+            option(value='') select intake
+            option(value='febulary') Febulary
+            option(value='april') April
+            option(value='october') October
+        .column
+          label(for='sponshorship') Sponshorship
+          select#sponshorship(name='sponshorship')
+            option(value='') select sponshorship
+            option(value='private') Private 
+            option(value='government') Government
+      label(for='gender') Gender
+      .gender-row
+        .gender-column
+          input#male(type='radio' name='gender' value='male' checked='')
+          label(for='css') Male
+        .gender-column
+          input#female(type='radio' name='gender' value='female')
+          label(for='javascript') Female
+      .row
+        .column
+          label(for='dateOfBirth') Date of birth
+          input#dateOfBirth(type='date' name='dateOfBirth')
+        .column
+          label(for='residence') Residence
+          input#residence(type='text' name='residence')
+      .button-container
+        button(type='submit') submit

@@ -27,19 +27,76 @@
                         <input type="text" id="lastName" name="lastName">
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="column">
                         <label for="course">Course</label>
-                        <input type="text" id="Course" name="Course">
+                        <select name="course" id="course">
+                            <option value="">select course</option>
+                            <option value="civil">civil enginer</option>
+                            <option value="information">Information technology</option>
+                            <option value="software">software engineering</option>
+                        </select>
                     </div>
                     <div class="column">
-                        <label for="lastName">Entry Scheme</label>
-                        <input type="text" id="EntrySheme" name="EntrySheme">
+                        <label for="entry-scheme">Entry Scheme</label>
+                        <select name="entry-scheme" id="entry-scheme">
+                            <option value="">select entry scheme</option>
+                            <option value="certificate">Certificate </option>
+                            <option value="A-Level">A-Level</option>
+                            <option value="O-Level">O-Level</option>
+                        </select>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="intake">Intake</label>
+                        <select name="intake" id="intake">
+                            <option value="">select intake</option>
+                            <option value="febulary">Febulary</option>
+                            <option value="april">April</option>
+                            <option value="october">October</option>
+                        </select>
+                    </div>
+
+                    <div class="column">
+                        <label for="sponshorship">Sponshorship</label>
+                        <select name="sponshorship" id="sponshorship">
+                            <option value="">select sponshorship</option>
+                            <option value="private">Private </option>
+                            <option value="government">Government</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="gender">Gender</label>
+                <div class="gender-row">
+                    <div class="gender-column">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="css">Male</label>
+                    </div>
+                    <div class="gender-column">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="javascript">Female</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="date-of-birth">Date of birth</label>
+                        <input type="date" id="date-of-birth" name="date-of-birth">
+                    </div>
+                    <div class="column">
+                        <label for="residence">Residence</label>
+                        <input type="text" id="residence" name="residence">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">submit</button>
                 </div>
             </form>
         </div>
     </div>
 </body>
-
 </html>
